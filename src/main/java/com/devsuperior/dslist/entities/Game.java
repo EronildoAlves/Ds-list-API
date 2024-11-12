@@ -1,16 +1,13 @@
 package com.devsuperior.dslist.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
-@Entity
+@Entity(name = "Game")
 @Table(name = "games")
 public class Game {
 
