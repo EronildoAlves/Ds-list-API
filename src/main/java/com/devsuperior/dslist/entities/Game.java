@@ -8,7 +8,7 @@ import lombok.*;
 @AllArgsConstructor
 @Getter
 @Entity(name = "Game")
-@Table(name = "games")
+@Table(name = "tb_game")
 public class Game {
 
     @Id

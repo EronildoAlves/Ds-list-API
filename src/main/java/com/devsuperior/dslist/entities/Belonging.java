@@ -11,11 +11,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 @Entity(name = "Belonging")
-@Table(name = "belonging")
+@Table(name = "tb_belonging")
 public class Belonging {
 
     @EmbeddedId
     private BelongingPk id = new BelongingPk();
+
     private Integer position;
 
     public Belonging(Game game, GameList list, Integer position) {
@@ -23,6 +24,5 @@ public class Belonging {
         id.setList(list);
         this.position = position;
     }
-
 }
 
